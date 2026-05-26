@@ -3,4 +3,6 @@ using FluentValidation;
 
 namespace Application.Features.Assets.Validators;
 
-public class CreateAssetValidator : AbstractValidator<CreateAssetCommand>;
+public class CreateAssetValidator : AbstractValidator<CreateAssetCommand>
+{
+}
