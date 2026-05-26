@@ -45,7 +45,7 @@ This repository is a **base template** for creating new .NET APIs following IATe
 |------------|--------|
 | .NET | 10.0 |
 | ASP.NET Core | 10.0.x |
-| Scalar.AspNetCore | 2.13.18 |
+| Scalar.AspNetCore | 2.14.14 |
 | Microsoft.AspNetCore.OpenApi | 10.0.8 |
 | API Versioning (Asp.Versioning.Mvc) | 10.0.0 |
 | HealthChecks UI Client | 9.0.0 |
