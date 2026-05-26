@@ -105,10 +105,9 @@ dotnet run --project src/Api/Api.csproj
 ```
 
 By default, the application will be available at:
-- `http://localhost:5000`
-- `https://localhost:5001` (if configured)
+- `http://localhost:5015`
 
-> Check the console output for the exact port when starting the project.
+> The exact URL may vary depending on the active launch profile. Check `src/Api/Properties/launchSettings.json` or the console output when starting the project.
 
 ---
 
