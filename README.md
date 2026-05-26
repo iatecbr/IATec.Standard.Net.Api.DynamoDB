@@ -49,7 +49,7 @@ This repository is a **base template** for creating new .NET APIs following IATe
 | Microsoft.AspNetCore.OpenApi | 10.0.8 |
 | API Versioning (Asp.Versioning.Mvc) | 10.0.0 |
 | HealthChecks UI Client | 9.0.0 |
-| MediatR | 14.0.0 |
+| MediatR | 14.1.0 |
 | FluentValidation | 12.1.1 |
 | FluentResults | 4.0.0 |
 | IATec.Shared.* | As per `csproj` files |
