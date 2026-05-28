@@ -12,6 +12,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### ADDED
 - Comprehensive `README.md` with precise project structure, exact NuGet versions, and detailed layer descriptions.
 - `CHANGELOG.md` with categorized release history (`ADDED`, `UPDATED`, `FIXED`, `REMOVED`).
+- `AGENTS.md` — compact instruction file for AI agents with build commands, architecture notes, DynamoDB patterns, known startup crashes, and environment quirks.
 
 ---
 
