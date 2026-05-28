@@ -328,35 +328,6 @@ On startup, `ApplyMigrations()` connects to LocalStack and creates `person-table
 
 Settings are located in `src/Api/appsettings.json`.
 
-### Current `appsettings.json`
-
-```json
-{
-  "TimeZone": "UTC",
-  "Container": {
-    "Name": "Vertical-ContextContainerType",
-    "ContainerId": "ContainerId"
-  },
-  "Logging": {
-    "LogLevel": {
-      "Default": "Information"
-    }
-  },
-  "AWS": {
-    "DynamoDB": {
-      "Region": "us-east-1",
-      "AccessKey": "test",
-      "SecretKey": "test",
-      "TableNames": {
-        "Person": "person-table"
-      }
-    },
-    "ServiceUrl": "http://localhost:4566",
-    "UseLocalStack": true
-  }
-}
-```
-
 ### What to configure when starting a new API
 
 | Section | Description | Example |
@@ -667,7 +638,6 @@ dotnet add src/Domain.Tests package xunit.runner.visualstudio
 ### Basic Dockerfile example
 
 ```dockerfile
-# syntax=docker/dockerfile:1
 FROM mcr.microsoft.com/dotnet/aspnet:10.0 AS base
 WORKDIR /app
 EXPOSE 8080
