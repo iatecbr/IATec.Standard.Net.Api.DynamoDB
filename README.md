@@ -309,7 +309,17 @@ docker run --rm -it -p 4566:4566 localstack/localstack
 dotnet restore
 ```
 
-### 4. Run the API
+### 4. Configure LogServiceOption
+
+`appsettings.json` does not include a `LogServiceOption` section. `AddLoggingService()` (see `src/AntiCorruption/Configurations/Extensions/LoggingConfig.cs`) throws `ArgumentNullException` when `LogServiceOption.Url` is null or empty — this happens on the first request that triggers log dispatch. Add the section before running:
+
+```json
+"LogServiceOption": {
+  "Url": "http://your-log-service-url"
+}
+```
+
+### 5. Run the API
 
 ```bash
 dotnet run --project src/Api/Api.csproj
