@@ -228,7 +228,7 @@ IATec.Standard.Net.Api.DynamoDB/
 
 ### 1. Api (Presentation Layer)
 
-Entrypoint ASP.NET Core Web API. Orchestrates all configurations and runs DynamoDB migrations on startup. `ApplyMigrations()` is called after `UseApi()` — it connects to LocalStack and creates tables only when `UseLocalStack: true`.
+Entrypoint ASP.NET Core Web API. Orchestrates all configurations and runs DynamoDB migrations on startup. `ApplyMigrations()` is called **inside** `UseApi()` (see `ApiDependencyInjectionConfig.cs`) — it connects to LocalStack and creates tables only when `UseLocalStack: true`.
 
 ### 2. Application Layer
 
