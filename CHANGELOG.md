@@ -64,7 +64,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Persistence model: `PersonPersistence.cs` with full DynamoDB attribute mapping.
 - Migration contracts: `IMigration.cs`, `IMigrationManager.cs`.
 - `MigrationManager.cs` — orchestrates table creation on startup.
-- `PeopleTableMigration.cs` — creates `person-table` with `Id` as hash key.
+- `PeopleTableMigration.cs` — creates `person-table` with `Pk` as hash key and `HashKey` as range key.
 - Value converters: `FirstNameValueConverter`, `LastNameValueConverter`, `MiddleNameValueConverter`.
 - `DatabaseExtension.cs` — registers `AmazonDynamoDBClient` and `DynamoDBContext`.
 - `MappingExtension.cs` — registers persistence model mappings.
